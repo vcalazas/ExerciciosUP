@@ -15,7 +15,7 @@ public abstract class MyTask {
 			case TASK2: 
 				return new Task2();
 			case TASK3: 
-				return null;
+				return new Task3();
 			case TASK4: 
 				return new Task4();
 

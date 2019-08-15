@@ -23,8 +23,8 @@ public class Task4 extends MyTask{
 			
 			MyTaskUtil.say("Número inicial: "+last+", constante definida: "+q+".\n","Inicio da sequencia:\n" );
 			for(int i = 1; i <= 100; i++) {
-				MyTaskUtil.say(last+" - ");
-				last = last * q;
+				MyTaskUtil.say((i+"° valor: " )+last+( i == 100 ? "" : "\n" ));
+				last = (( last * q) + q );
 			}
 		} catch(Exception e) {
 			MyTaskUtil.say("ERROR - TASK4");
