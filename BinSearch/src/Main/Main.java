@@ -44,10 +44,10 @@ public class Main {
 			if(s.equals(chave)) {
 				return s;
 			} else {
-				// System.out.println(count+" - Nome: "+ s +": index: "+index+ ";\n calculated: "+ calculated + "; left: "+left+"; right: "+right+"\n==========================================================");
-				System.out.println(count+" - Nome: "+ s +"\n==========================================================");
+				System.out.println(count+" - Nome: "+ s +": index: "+index+ ";\n calculated: "+ calculated + "; left: "+left+"; right: "+right+"\n==========================================================");
+				// System.out.println(count+" - Nome: "+ s +"\n==========================================================");
 				if(int1 > 0) {
-					return binSearch(array, left, (right-1), chave, count);
+					return binSearch(array, left, (index-1), chave, count);
 				} else {
 					return binSearch(array, (index+1), right, chave, count);
 				}
